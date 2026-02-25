@@ -1,6 +1,7 @@
 <script>
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import Nav from './Nav.svelte';
 
 	let { children } = $props();
 </script>
