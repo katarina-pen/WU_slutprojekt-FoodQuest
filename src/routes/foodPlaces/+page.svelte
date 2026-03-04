@@ -1,0 +1,1 @@
+<h1 class="bg-amber-500 text-3xl">Restauranger</h1>
