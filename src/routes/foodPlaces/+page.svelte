@@ -1,14 +1,24 @@
 <h1 class="bg-amber-500 text-3xl">Restauranger</h1>
 
 <ul> 
-     <div class="dropdown">
+
+     <!-- <div class="dropdown">
         <button class="dropbtn">7-Eleven</button>
         <div class="dropdown-content">
             <div onclick={() => showAlert('HTML')}>HTML</div>
             <div onclick={() => showAlert('CSS')}>CSS</div>
             <div onclick={() => showAlert('JavaScript')}>JavaScript</div>
         </div>
-    </div>
+    </div> -->
+
+    <select id="7ElevenSelect" onchange={() => elevenChange()}>
+        <option value="saab" selected>7-Eleven</option>
+        <option value="7Eleven-Centralstationen">Centralstationen </option>
+        <option value="7Eleven-Korsetten">Korsetten</option>
+        <option value="audi">Data Science</option>
+    </select>
+
+    
 
     <li>7-Eleven</li>
 
@@ -46,3 +56,8 @@
     <li>Waffles & Shakes</li>
 
 </ul>
+
+<!-- <script src="foodList.js"></script> -->
+ <script>
+    import {elevenChange} from './foodList'
+ </script>
