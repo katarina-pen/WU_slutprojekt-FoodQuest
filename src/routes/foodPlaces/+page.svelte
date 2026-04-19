@@ -11,24 +11,24 @@
         </div>
     </div> -->
 
+    <label>7-Eleven</label>
     <select id="7ElevenSelect" onchange={() => elevenChange()}>
-        <option value="saab" selected>7-Eleven</option>
+        <!-- <option value="" disabledselected>7-Eleven</option> -->
         <option value="7Eleven-Centralstationen">Centralstationen </option>
         <option value="7Eleven-Korsetten">Korsetten</option>
         <option value="audi">Data Science</option>
     </select>
 
-    
-
-    <li>7-Eleven</li>
-
+    {#each foodPlaces as foodPlace}
+        <a href="/foodPlaces/{foodPlace.slug}">{foodPlace.namn}</a>
+    {/each}
 
     <li>A&A pizzeria</li>
     <li>Bagelbaren</li>
     <li>Baguetteria No 1</li>
     <li>Benne Pastabar</li>
     <li>BROGYLLEN KONDITORI LANDALA</li>
-    <li>Burger King</li>
+    <li>Burger King FLERA PLATSER!!!</li>
     <li>Café Hedvalls</li>
     <li>Coop Konsum Avenyn</li>
     <li>Dahls Bageributik Gårda</li>
@@ -41,15 +41,15 @@
     <li>KFC</li> 
     <li>LEBANESE GRILLHOUSE</li>
     <li>Le Pain Francais</li> 
-    <li>Max</li> 
+    <li>Max FLERA PLATSER!!!</li> 
     <li>Meat the Greek</li>
     <li>Naked Juice Bar</li>
-    <li>Picadeli</li>
+    <li>Picadeli FLERA PLATSER!!!</li>
     <li>Pita Göteborg AB</li>
     <li>Pressbyrån</li>
     <li>Seaside</li> 
     <li>Soppa & Sunt</li>
-    <li>Subway</li>
+    <li>Subway FLERA PLATSER!!!</li>
     <li>Sushi Vimi</li>
     <li>Sushi Wu</li>
     <li>TAJ MAHAL INDISK RESTAURANG</li>
@@ -57,7 +57,11 @@
 
 </ul>
 
+
+
 <!-- <script src="foodList.js"></script> -->
  <script>
     import {elevenChange} from './foodList'
+    import { foodPlaces } from "$lib/foodPlaces";
+    
  </script>
