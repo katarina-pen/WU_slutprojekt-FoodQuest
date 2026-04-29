@@ -1,28 +1,62 @@
-<div class="flex justify-around bg-[salmon]"> 
-      <!-- <a href="/home">the quest</a> 
+<div class="flex justify-around bg-[salmon]">
+	<!-- <a href="/home">the quest</a> 
       <a href="/foodPlaces">restarunagnger</a> 
       <a href="/info">matkort info</a> 
       <a href="https://www.youtube.com/watch?v=DA7wDV4MbNo"> also mouse</a>  -->
-      
-  <div style="position: relative;">
-        <img src="src/lib/img/windows 95 navbar2.svg">
-        
-    <!-- Restaurang sida -->
-    <a href="/foodPlaces">
-      <rect x="153" y="22" width="140" height="25" fill="transparent"/>
-    </a>
 
-    <!-- matkort info -->
-    <a href="/info">
-      <rect x="323" y="22" width="120" height="25" fill="transparent"/>
-    </a>
+	<div class="container">
+		<img src="src/lib/img/w95-nav-blank.svg" />
+		<div class="foodPlaces text-2xl"><a href="/foodPlaces">Restauranger</a></div>
+		<div class="start text-2xl"><a href="/home">Start</a></div>
+		<div class="info text-2xl">Info</div>
+		<div class="help text-2xl">Help</div>
+		<!-- <div class="centered">Centered</div> -->
+	</div>
+</div>
 
-    <!-- mouse -->
-    <a href="https://www.youtube.com/watch?v=DA7wDV4MbNo">
-      <rect x="475" y="22" width="50" height="25" fill="transparent"/>
-    </a>
+<style>
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
 
-  </div>
+	.foodPlaces {
+		position: absolute;
+		bottom: 15px;
+		left: 150px;
+		color: black;
+	}
 
-      
-</div> 
+	.start {
+		position: absolute;
+		bottom: 15px;
+		left: 55px;
+		color: black;
+	}
+
+	.info {
+		position: absolute;
+		bottom: 15px;
+		left: 320px;
+		color: black;
+	}
+
+	.help {
+		position: absolute;
+		bottom: 15px;
+		left: 400px;
+		color: black;
+	}
+
+	/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+	div {
+		font-family: 'VT323', serif;
+	}
+</style>
