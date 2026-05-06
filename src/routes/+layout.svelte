@@ -14,7 +14,7 @@
 
 
 
-<main class="bg-[#008080] row-start-3 col-span-full">
+<main class="bg-[#008080] row-start-3 col-span-full min-h-screen">
 	{@render children()}
 </main>
 
