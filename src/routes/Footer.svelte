@@ -6,15 +6,9 @@
 
 
 <footer class="bg-[#C3C3C3] row-start-4 col-span-full text-2xl">
-
-
-
-	<!-- <img src={bottomBar} alt="footer" /> -->
- <a href="/help">
-    <img src={clippy} alt="Clippy" class= "h-15 object-contain inline-block hover:animate-bounce" />
-<!-- <span class="inline-block animate-bounce"></span> -->
-   </a>
-
+    <a href="/help">
+        <img src={clippy} alt="Clippy" class= "h-15 object-contain inline-block hover:animate-bounce" />
+    </a>
     Hej hej! Behöver du hjälp gällande matkortet? Klicka på mig!
 </footer>
 
